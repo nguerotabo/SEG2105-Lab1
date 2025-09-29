@@ -128,6 +128,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 addNumber(".");
                 break;
             case R.id.btn_equal:
+                String expression = text_display.getText().toString();
+                if (expression.isEmpty()){
+                    text_display.setText("0");
+                    break;
+                }
                 String result = null;
                 try {
                     result = evaluate(text_display.getText().toString());
