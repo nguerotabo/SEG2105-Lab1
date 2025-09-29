@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_multiply:
                 addNumber("*");
                 break;
+            case R.id.btn_decimal:
+                addNumber(".");
+                break;
             case R.id.btn_equal:
                 String result = null;
                 try {
